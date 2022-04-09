@@ -6,6 +6,7 @@ wn.title("pong - Sebas")
 wn.bgcolor("black")
 wn.setup(width=800, height=600)
 wn.tracer()
+wn.addshape("images/btc_logo.gif")
 
 score_b = 0
 score_r = 0
@@ -31,12 +32,14 @@ paddle_b.shapesize(stretch_wid=8, stretch_len=1)
 #ball
 ball = turtle.Turtle()
 ball.speed(0)
-ball.shape("square")
-ball.color("white")
+ball.shape('images/btc_logo.gif')
+#ball.shape("square")
+#ball.color("white")
 ball.penup()
 ball.goto(0, 0)
 ball.dx = 5
 ball.dy = 5
+
 
 #Score
 pen = turtle.Turtle()
