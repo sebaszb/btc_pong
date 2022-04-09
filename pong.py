@@ -115,11 +115,11 @@ while True:
     if x_conditionr and y_conditionr:
         ball.setx(340)
         ball.dx  = -ball.dx
-        os.system("afplay bounce.mp4&")
+        os.system("afplay sounds/bounce.mp4&")
         
     x_conditionl = (ball.xcor() < -340 and ball.xcor() > -350)
     y_conditionl = (ball.ycor() < paddle_a.ycor() + 70 and ball.ycor() > paddle_a.ycor() - 70)
     if x_conditionl and y_conditionl:
         ball.setx(-340)
         ball.dx  = -ball.dx
-        os.system("afplay bounce.mp4&")
+        os.system("afplay sounds/bounce.mp4&")
