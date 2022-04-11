@@ -1,6 +1,7 @@
 # btc_pong
 
 **Goal**
+
 Build a 2 player pong game where the two players bet a certain amount of Bitcoin (Sats) on who will win. The winner takes all the Sats.
 
 **Details**
@@ -12,4 +13,12 @@ Build a 2 player pong game where the two players bet a certain amount of Bitcoin
 **Technical details**
 - As of today the game is written in Python, but this can be changed if needed
 - I think BTCPay Server could be used to manage the payment.
+
+**Next steps**
+- Improve game: Make it smoother and funny
+- Build the web page ()
+- Get the game running on the web page and accessible to any one
+- Allow for 2 people to play against each other online
+- Add payment capabilities: receive payments from the payers and pay to
+  the winner. Via Lighting.
 
