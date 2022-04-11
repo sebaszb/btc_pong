@@ -33,7 +33,7 @@ paddle_b.shapesize(stretch_wid=8, stretch_len=1)
 ball = turtle.Turtle()
 ball.speed(0)
 ball.shape('images/btc_logo.gif')
-#ball.shape("square")
+#ball.shape("circle")
 #ball.color("white")
 ball.penup()
 ball.goto(0, 0)
@@ -111,7 +111,24 @@ while True:
         score_r += 1
         pen.clear()
         pen.write("Blue player: {} -- Red player: {}".format(score_b, score_r), align="center", font=("currier", 24, "normal"))
-        
+    
+    #Set a floor for the paddles
+    flor_paddle_a_condition = (paddle_a.ycor() < -200)
+    flor_paddle_b_condition = (paddle_b.ycor() < -200)
+    if flor_paddle_a_condition:
+        paddle_a.sety(-200)
+    if flor_paddle_b_condition:
+        paddle_b.sety(-200)
+
+
+    #Set a ceiling for the paddles
+    flor_paddle_a_condition = (paddle_a.ycor() > 200)
+    flor_paddle_b_condition = (paddle_b.ycor() > 200)
+    if flor_paddle_a_condition:
+        paddle_a.sety(200)
+    if flor_paddle_b_condition:
+        paddle_b.sety(200)
+           
     #paddle and ball collisions
     x_conditionr = (ball.xcor() > 340 and ball.xcor() < 350)
     y_conditionr = (ball.ycor() < paddle_b.ycor() + 70 and ball.ycor() > paddle_b.ycor() - 70)
