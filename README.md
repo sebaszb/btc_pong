@@ -15,10 +15,11 @@ Build a 2 player pong game where the two players bet a certain amount of Bitcoin
 - I think BTCPay Server could be used to manage the payment.
 
 **Next steps**
-- Improve game: Make it smoother and funny
-- Build the web page ()
-- Get the game running on the web page and accessible to any one
-- Allow for 2 people to play against each other online
+- Improve game: Make it smoother and funny.
+- Build the web page. It should be possible to host it somewhere for free
+  with a very long and complicated url.
+- Get the game running on the web page and accessible to anyone.
+- Allow for 2 people to play against each other online.
 - Add payment capabilities: receive payments from the payers and pay to
   the winner. Via Lighting.
 
