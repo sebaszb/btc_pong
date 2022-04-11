@@ -79,9 +79,10 @@ wn.onkeypress(paddle_a_down, "s")
 wn.onkeypress(paddle_b_up, "Up")
 wn.onkeypress(paddle_b_down, "Down")
 
+#Set the status of the game
+game = True
 
-
-while True:
+while game:
     wn.update()
     
     #move the ball
@@ -143,3 +144,8 @@ while True:
         ball.setx(-340)
         ball.dx  = -ball.dx
         os.system("afplay sounds/bounce.mp4&")
+
+    #check the scores and break out of the game
+    if score_b > 2 or score_r > 2:
+        break
+         
